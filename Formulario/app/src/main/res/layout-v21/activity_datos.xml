@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:autoSizeTextType="uniform"
+        android:background="@color/design_default_color_primary_dark"
+        android:paddingVertical="35dp"
+        android:text="Confirmar Datos"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="15dp"
+        android:text="---"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@id/titulo" />
+
+    <TextView
+        android:id="@+id/fecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="25dp"
+        android:foreground="@drawable/ic_birth"
+        android:foregroundGravity="left|center"
+        android:paddingLeft="30dp"
+        android:text="---"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/nombre" />
+
+    <TextView
+        android:id="@+id/telefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="25dp"
+        android:foreground="@drawable/ic_phone"
+        android:foregroundGravity="center|left"
+        android:paddingLeft="30dp"
+        android:text="---"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/fecha" />
+
+    <TextView
+        android:id="@+id/correo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="25dp"
+        android:foreground="@drawable/ic_email"
+        android:foregroundGravity="center|left"
+        android:paddingLeft="30dp"
+        android:text="---"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/telefono" />
+
+    <TextView
+        android:id="@+id/descripTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="25dp"
+        android:text="Descripción: "
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/correo" />
+
+    <TextView
+        android:id="@+id/descrip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="25dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginEnd="15dp"
+        android:lines="13"
+        android:nestedScrollingEnabled="true"
+        android:scrollIndicators="right"
+        android:scrollbarSize="5dp"
+        android:scrollbars="vertical"
+        android:text="---"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toRightOf="@id/descripTitle"
+        app:layout_constraintTop_toBottomOf="@id/correo" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/editData"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:text="Editar"
+        android:textSize="18sp"
+        app:icon="@drawable/ic__action_edit"
+        app:iconGravity="textStart"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
